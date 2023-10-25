@@ -1,4 +1,5 @@
 package ru.itmo.java.basics.lab1;
+
 import java.util.Scanner;
 
 public class Lab1 {
@@ -10,9 +11,11 @@ public class Lab1 {
         task5();
         task6();
     }
+
     static void task1() {
         System.out.println("Я\nхорошо\nзнаю\nJava");
     }
+
     static void task2() {
         double result1 = (46 + 10) * (10.0 / 3.0);
         int result2 = 29 * 4 * -15;
@@ -22,7 +25,7 @@ public class Lab1 {
 
     static void task3() {
         int number = 10500;
-        int result = (number/10)/10;
+        double result = ((double) number / 10) / 10;
         System.out.println(result);
     }
 
@@ -30,7 +33,7 @@ public class Lab1 {
         double a = 3.6;
         double b = 4.1;
         double c = 5.9;
-        double result = a*b*c;
+        double result = a * b * c;
         System.out.println(result);
     }
 
@@ -59,4 +62,5 @@ public class Lab1 {
             System.out.println("Нечетное");
         }
     }
+
 }
