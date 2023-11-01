@@ -22,18 +22,18 @@ public class CalcMethods {
         return a / b;
     }
 
-    public long divide(long a, long b) {
+    public double divide(long a, long b) {
         if (b == 0) {
             throw new ArithmeticException("Деление на ноль!");
         }
-        return a / b;
+        return (double) a / b;
     }
 
-    public int divide(int a, int b) {
+    public double divide(int a, int b) {
         if (b == 0) {
             throw new ArithmeticException("Деление на ноль!");
         }
-        return a / b;
+        return (double) a / b;
     }
 
     // Метод для умножения
