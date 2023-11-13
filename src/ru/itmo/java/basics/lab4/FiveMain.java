@@ -1,4 +1,5 @@
 package ru.itmo.java.basics.lab4;
+
 import java.util.Scanner;
 
 public class FiveMain {
@@ -21,7 +22,6 @@ public class FiveMain {
 
         if (array[0] == 3 || array[4] == 3) {
             System.out.println("\ntrue");
-        }
-        else System.out.println("\nfalse");
+        } else System.out.println("\nfalse");
     }
 }

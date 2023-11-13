@@ -29,7 +29,6 @@ public class NineMain {
             int last = array[array.length - 1];
             array[0] = last;
             array[array.length - 1] = first;
-        }
-        else System.out.println("Невозможно поменять местами элементы в массиве, состоящем из 1 элемента");
+        } else System.out.println("Невозможно поменять местами элементы в массиве, состоящем из 1 элемента");
     }
 }

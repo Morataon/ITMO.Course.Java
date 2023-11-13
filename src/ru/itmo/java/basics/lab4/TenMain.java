@@ -1,5 +1,4 @@
 package ru.itmo.java.basics.lab4;
-
 import java.util.Scanner;
 
 public class TenMain {

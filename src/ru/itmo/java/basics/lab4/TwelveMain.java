@@ -1,4 +1,5 @@
 package ru.itmo.java.basics.lab4;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -30,23 +31,23 @@ public class TwelveMain {
     public static int[] mergeSort(int[] ints2) {
         System.out.println(Arrays.toString(ints2));
 
-        if(ints2.length < 2) { // если длина массива состоит из 1 элемента, то возвращаем его же обратно
+        if (ints2.length < 2) { // если длина массива состоит из 1 элемента, то возвращаем его же обратно
             return ints2;
         }
 
         int mid = ints2.length / 2; // определяем середину массива,
         // в любом случае даже если элементов нечетное кол-во операция даст целое число
-        int[] left = new int [mid]; // определяем кол-во элементов левой части (она сама есть массив)
+        int[] left = new int[mid]; // определяем кол-во элементов левой части (она сама есть массив)
         // левая часть равна половине (ОКРУГЛЯЕТ В МЕНЬШУЮ СТОРОНУ, отсекая десятки)
 
         int[] right; // правую часть (массив) обозначаем здесь, чтобы она была "видна"
         // но определяем её длину по условию ниже
 
-        if(ints2.length % 2 == 0) { // если кол-во элементов во всём массиве Четное, то
-            right = new int [mid]; // длина правой части равна половине
+        if (ints2.length % 2 == 0) { // если кол-во элементов во всём массиве Четное, то
+            right = new int[mid]; // длина правой части равна половине
 
-        } else  { // еесли кол-во элементов во всём массиве НЕчетное, то
-            right = new int [mid + 1]; // длина правой части равна половина+1
+        } else { // еесли кол-во элементов во всём массиве НЕчетное, то
+            right = new int[mid + 1]; // длина правой части равна половина+1
         }
 
         for (int i = 0; i < left.length; i++) {
@@ -78,7 +79,7 @@ public class TwelveMain {
             if (leftPointer < left.length && rightPointer < right.length) {
                 if (left[leftPointer] < right[rightPointer]) {
                     result[resultPointer++] = left[leftPointer++];
-                } else  {
+                } else {
                     result[resultPointer++] = right[rightPointer++];
                 }
             } else if (leftPointer < left.length) {

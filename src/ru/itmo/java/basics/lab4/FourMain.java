@@ -22,7 +22,6 @@ public class FourMain {
     private static boolean checkSum(int a, int b, int c) {
         if (a < b && b < c) {
             return true;
-        }
-        else return false;
+        } else return false;
     }
 }

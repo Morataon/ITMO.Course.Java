@@ -18,11 +18,11 @@ public class ThreeMain {
         boolean result = checkSum(num1, num2, num3);
         System.out.println("Результат: " + result);
     }
+
     private static boolean checkSum(int a, int b, int c) {
         int sum = a + b;
         if (sum == c) {
             return true;
-        }
-        else return false;
+        } else return false;
     }
 }

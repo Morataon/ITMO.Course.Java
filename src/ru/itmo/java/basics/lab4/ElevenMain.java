@@ -14,7 +14,5 @@ public class ElevenMain {
         for (int i = 0; i < size; i++) {
             array[i] = scanner.nextInt();
         }
-
-
     }
 }
