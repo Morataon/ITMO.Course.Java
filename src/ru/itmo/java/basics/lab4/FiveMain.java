@@ -1,14 +1,16 @@
 package ru.itmo.java.basics.lab4;
-
 import java.util.Scanner;
 
 public class FiveMain {
     public static void main(String[] args) {
-        int[] numbers = new int[5];
-        System.out.print("В массиве 5 элементов\n");
+
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print("Введите " + i + " элемент массива: ");
+        System.out.print("Введите длину массива: ");
+        int size = scanner.nextInt();
+
+        int[] numbers = new int[size];
+        System.out.println("Введите элементы массива:");
+        for (int i = 0; i < size; i++) {
             numbers[i] = scanner.nextInt();
         }
         check(numbers);
@@ -20,7 +22,7 @@ public class FiveMain {
             System.out.print(i + ", ");
         }
 
-        if (array[0] == 3 || array[4] == 3) {
+        if (array[0] == 3 || array[array.length - 1] == 3) {
             System.out.println("\ntrue");
         } else System.out.println("\nfalse");
     }
