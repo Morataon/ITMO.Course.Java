@@ -8,13 +8,17 @@ public class ThreeMain {
         System.out.println("Введите текст:");
         String text = scanner.nextLine();
 
-        String censoredText = byaka(text);
+        System.out.println("Введите фразу или слово, которое нужно скрыть цензурой:");
+        String censoredText = scanner.nextLine();
 
-        System.out.println("Текст после цензуры:\n" + censoredText);
+        String censoredFinishText = censoredWords(text, censoredText);
+
+        System.out.println("Текст после цензуры:\n" + censoredFinishText);
     }
 
-    private static String byaka(String text) {
-        text = text.replaceAll("\\bбяка\\b", "[вырезано цензурой]"); // \b чтобы считывалось отдельное слово, а не как часть другого слова
+    private static String censoredWords(String text, String sensoredText) {
+        String sensored = sensoredText;
+        text = text.replaceAll("\\b" + sensored + "\\b", "[вырезано цензурой]"); // \b чтобы считывалось отдельное слово, а не как часть другого слова
         return text;
     }
 }
